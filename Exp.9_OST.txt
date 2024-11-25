@@ -27,3 +27,21 @@ remote:      https://github.com/Deepika0422/OSTlab/pull/new/main
 remote:
 To https://github.com/Deepika0422/OSTlab.git
  * [new branch]      main -> main
+
+[24/11, 15:30] Deepika IT: mvn archetype:generate -DgroupId=com.example -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+[24/11, 15:31] Elakkiya.: mvn -version
+[24/11, 16:05] Deepika IT: <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Use a compatible version -->
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
+mvn exec:java -Dexec.mainClass="com.example.MainClass" -Dexec.args="arg1 arg2"
