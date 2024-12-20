@@ -90,5 +90,22 @@ object DivisionExample {
     }
   }
 }
+Vowelcheck:
+import scala.io.StdIn
 
+object VowelCheck {
+  def main(args: Array[String]): Unit = {
+    // Prompt the user for input
+    val word = StdIn.readLine("Enter a word to check if it starts with a vowel: ").toLowerCase
+
+    // Check if the first character is a vowel
+    if (word.nonEmpty && "aeiou".contains(word(0))) {
+      println(s"The word '$word' starts with a vowel.")
+    } else if (word.nonEmpty) {
+      println(s"The word '$word' does not start with a vowel.")
+    } else {
+      println("You entered an empty word.")
+    }
+  }
+}
 
